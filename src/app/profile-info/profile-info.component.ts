@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Person } from "../../types";
 
 @Component({
   selector: 'app-profile-info',
@@ -6,12 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./profile-info.component.css']
 })
 export class ProfileInfoComponent implements OnInit {
-  @Input() name = '';
-  @Input() profilePicPath = '';
-  @Input() age = 0;
-  @Input() bio = '';
-  @Input() birthday = '';
-  @Input() interests: string[] = [];
+  @Input() person: Person = {
+    name : '',
+    profilePicPath : '',
+    age : 0,
+    bio : '',
+    birthday : '',
+    interests : [],
+  }
 
   constructor() { }
 
