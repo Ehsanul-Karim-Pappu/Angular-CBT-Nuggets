@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {friendsData} from "./data";
 import { Person } from "../types";
 
 @Component({
@@ -15,5 +16,6 @@ export class AppComponent {
     birthday : 'March 3',
     interests : ['Programming', 'VLSI', 'Robotics', 'Reading'],
   };
+  friendsData: Person[] = friendsData;
   title = "my-first-angular-app"
 }
