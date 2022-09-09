@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {friendsData} from "./data";
+import { myProfileData, friendsData } from "./data";
 import { Person } from "../types";
 
 @Component({
@@ -8,14 +8,7 @@ import { Person } from "../types";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  myPerson: Person = {
-    name : 'Khandaker Ehsanul Karim',
-    profilePicPath : 'assets/passport%20size%20photo%202.jpg',
-    age : 26,
-    bio : 'I like Angular',
-    birthday : 'March 3',
-    interests : ['Programming', 'VLSI', 'Robotics', 'Reading'],
-  };
+  myProfileData: Person = myProfileData;
   friendsData: Person[] = friendsData;
   title = "my-first-angular-app"
 }

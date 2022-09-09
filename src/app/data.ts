@@ -1,5 +1,14 @@
 import { Person } from '../types';
 
+export const myProfileData: Person = {
+  name : 'Khandaker Ehsanul Karim',
+  profilePicPath : 'assets/passport%20size%20photo%202.jpg',
+  age : 26,
+  bio : 'I like Angular',
+  birthday : 'March 3',
+  interests : ['Programming', 'VLSI', 'Robotics', 'Reading'],
+}
+
 export const friendsData: Person[] = [{
   name : 'Hasib',
   profilePicPath : 'assets/hasib.jpg',
